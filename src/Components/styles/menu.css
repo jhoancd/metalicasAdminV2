@@ -1,0 +1,13 @@
+.menu {
+    height: 400px;
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    height: 65px;
+    border: 1px solid rgb(8 47 73);
+    font-size: 13pt;
+}
