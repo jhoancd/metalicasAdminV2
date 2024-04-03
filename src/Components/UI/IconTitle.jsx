@@ -1,9 +1,9 @@
 
-const IconTitle = ({ icon, title }) => {
+const IconTitle = ({ icon, title, size }) => {
     return (
         <div className="icon-text">
-            <span> {icon} </span>
-            <span className='text-2xl font-bold'>{title}</span>
+            <span className="text-sm"> {icon} </span>
+            <span className={`text-${size} font-bold`}>{title}</span>
         </div>
     )
 }

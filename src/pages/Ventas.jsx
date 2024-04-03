@@ -2,6 +2,7 @@ import { HiOutlineCurrencyDollar, HiSearch } from "react-icons/hi"
 import { Button, TextInput } from "flowbite-react"
 import IconTitle from "../Components/UI/IconTitle"
 import Navbar from "../Components/UI/Navbar"
+import TablaVentas from "../Components/UI/TablaVentas"
 
 
 const Ventas = () => {
@@ -18,6 +19,8 @@ const Ventas = () => {
                 <TextInput className="mt-2 w-full" type="text" icon={HiSearch} />
                 <Button className="mt-2 w-full" size="sm" color="blue">Agregar Venta</Button>
             </div>
+
+            <TablaVentas />
         </div>
     )
 }

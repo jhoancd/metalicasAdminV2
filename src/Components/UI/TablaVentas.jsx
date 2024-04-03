@@ -1,4 +1,6 @@
 import { Button, Table } from "flowbite-react"
+import { HiOutlineDocumentText } from "react-icons/hi";
+import IconTitle from "./IconTitle";
 
 const TablaVentas = () => {
     return (
@@ -19,10 +21,13 @@ const TablaVentas = () => {
                             <Table.Cell>4</Table.Cell>
                             <Table.Cell>0</Table.Cell>
                             <Table.Cell>
-                                <Button.Group>
-                                    <Button outline onClick={() => setModalTraslado(true)}><FaExchangeAlt /></Button>
-                                    <Button onClick={() => setModalIngreso(true)}><FaPlus /></Button>
-                                </Button.Group>
+                                <Button size="xs" outline>
+                                    <IconTitle
+                                        title="Detalles"
+                                        size="sm"
+                                        icon={<HiOutlineDocumentText />}
+                                    />
+                                </Button>
                             </Table.Cell>
                         </Table.Row>
                     </Table.Body>
