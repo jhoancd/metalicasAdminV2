@@ -1,19 +1,29 @@
-import { Card, Button, Table } from "flowbite-react"
+import { Button, Table } from "flowbite-react"
 import { FaExchangeAlt, FaPlus } from "react-icons/fa";
 import { useState } from "react";
 import Traslado from "../modals/Traslado";
+import Ingreso from "../modals/Ingreso";
 
 const ProductItem = () => {
 
     const [modalTraslado, setModalTraslado] = useState(false);
+    const [modalIngreso, setModalIngreso] = useState(false);
+
     const controlTraslado = {
         variable: modalTraslado,
         funcion: setModalTraslado
     }
 
+    const controlIngreso = {
+        variable: modalIngreso,
+        funcion: setModalIngreso
+    }
+
+
     return (
         <>
             <Traslado control={controlTraslado} />
+            <Ingreso control={controlIngreso} />
 
             <div className="overflow-x-auto mb-5">
                 <Table striped>
@@ -33,7 +43,7 @@ const ProductItem = () => {
                             <Table.Cell>
                                 <Button.Group>
                                     <Button outline onClick={() => setModalTraslado(true)}><FaExchangeAlt /></Button>
-                                    <Button><FaPlus /></Button>
+                                    <Button onClick={() => setModalIngreso(true)}><FaPlus /></Button>
                                 </Button.Group>
                             </Table.Cell>
                         </Table.Row>

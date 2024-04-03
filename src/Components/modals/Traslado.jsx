@@ -1,4 +1,4 @@
-import { Modal, Button, Select, Label, TextInput } from 'flowbite-react'
+import { Modal, Button, Select, Label, TextInput, Textarea } from 'flowbite-react'
 import { FaExchangeAlt } from "react-icons/fa";
 import IconTitle from '../UI/IconTitle';
 
@@ -11,13 +11,14 @@ const Traslado = ({ control }) => {
                     <IconTitle
                         title="Traslado"
                         icon={<FaExchangeAlt size="20px" />}
-
-                    /></Modal.Header>
+                    />
+                </Modal.Header>
                 <Modal.Body>
-                    <div className="space-y-6 mb-2">
-                        <p className="text-base font-size text-lg font-bold ">
-                            Calentador VC; 50cm; Electrico
-                        </p>
+                    <div className="max-w-md mb-2">
+                        <div className="block">
+                            <Label value="Articulo" />
+                        </div>
+                        <Textarea value="Carro de 4 puestos; V; A; P40; 2F de galon; carpa; ruedas antipinchazos" required disabled rows={3} />
                     </div>
 
                     <div className="max-w-md">
