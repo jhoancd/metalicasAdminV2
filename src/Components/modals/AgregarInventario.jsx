@@ -6,7 +6,7 @@ import IconTitle from '../UI/IconTitle';
 const AgregarInventario = ({ control }) => {
     return (
         <div>
-            <Modal show={control.variable} onClose={() => control.funcion}>
+            <Modal show={control.variable} onClose={() => control.funcion(false)}>
                 <Modal.Header>
                     <IconTitle
                         title="Ingresar mercancia"

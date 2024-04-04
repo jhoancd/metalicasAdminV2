@@ -20,7 +20,8 @@ const Inventario = () => {
             <AgregarInventario control={controlAgregar} />
             <Navbar />
 
-            <div className="m-2 bg-white p-4 rounded-lg border-slate-300 border">
+            <div className="m-2 bg-white 
+             rounded-lg border-slate-300 border">
                 <div>
                     <IconTitle
                         title="Inventario"

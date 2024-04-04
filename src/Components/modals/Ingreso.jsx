@@ -6,7 +6,7 @@ const Ingreso = ({ control }) => {
 
     return (
         <>
-            <Modal show={control.variable} onClose={() => control.funcion}>
+            <Modal show={control.variable} onClose={() => control.funcion(false)}>
                 <Modal.Header>
                     <IconTitle
                         title="Ingreso de mercancia"
