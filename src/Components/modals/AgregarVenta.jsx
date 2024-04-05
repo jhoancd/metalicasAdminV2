@@ -16,7 +16,7 @@ const AgregarVenta = ({ control }) => {
                         icon={<HiPlus size="20px" />}
                     />
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className='p-4'>
                     <form>
                         <div className="flex">
                             <div className='flex-1 mr-2'>

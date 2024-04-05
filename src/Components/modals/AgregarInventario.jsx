@@ -13,7 +13,7 @@ const AgregarInventario = ({ control }) => {
                         icon={<HiPlus size="20px" />}
                     />
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className='p-4'>
                     <div className='mb-2'>
                         <div className="block mt-2">
                             <Label value="Articulo:" />

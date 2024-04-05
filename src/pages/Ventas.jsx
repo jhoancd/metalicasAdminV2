@@ -30,7 +30,6 @@ const Ventas = () => {
                     <Button
                         className="mt-2 w-full"
                         size="sm"
-                        color="blue"
                         onClick={() => { setModalVenta(true) }}
                     >Agregar Venta</Button>
                 </div>

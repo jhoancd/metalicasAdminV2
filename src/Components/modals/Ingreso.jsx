@@ -13,7 +13,7 @@ const Ingreso = ({ control }) => {
                         icon={<FaPlus size="20px" />}
                     />
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className='p-4'>
                     <div className="max-w-md mb-2">
                         <div className="block">
                             <Label value="Articulo" />

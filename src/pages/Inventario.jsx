@@ -20,8 +20,7 @@ const Inventario = () => {
             <AgregarInventario control={controlAgregar} />
             <Navbar />
 
-            <div className="m-2 bg-white 
-             rounded-lg border-slate-300 border">
+            <div className="m-2 bg-white p-4 rounded-lg border-slate-300 border">
                 <div>
                     <IconTitle
                         title="Inventario"
@@ -33,7 +32,6 @@ const Inventario = () => {
                     <Button
                         className="mt-2 w-full"
                         size="sm"
-                        color="blue"
                         onClick={() => { setModalAgregar(true) }}
                     >Agregar Inventario</Button>
                 </div>
