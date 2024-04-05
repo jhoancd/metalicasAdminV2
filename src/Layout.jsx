@@ -1,5 +1,5 @@
-import DailySales from './Components/DailySales';
-import Menu from './Components/Menu';
+import DailySales from './Components/UI/DailySales';
+import Menu from './Components/UI/Menu';
 
 const Layout = () => {
     return (

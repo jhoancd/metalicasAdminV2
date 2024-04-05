@@ -6,6 +6,7 @@ import Navbar from '../Components/UI/Navbar';
 import AgregarInventario from "../Components/modals/AgregarInventario";
 import { useState } from "react";
 
+
 const Inventario = () => {
 
     const [modalAgregar, setModalAgregar] = useState(false);
@@ -14,6 +15,7 @@ const Inventario = () => {
         variable: modalAgregar,
         funcion: setModalAgregar
     }
+
 
     return (
         <div className='inventario'>

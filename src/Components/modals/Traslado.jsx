@@ -1,6 +1,6 @@
 import { Modal, Button, Select, Label, TextInput, Textarea } from 'flowbite-react'
-import { FaExchangeAlt } from "react-icons/fa";
 import IconTitle from '../UI/IconTitle';
+import { HiOutlineSwitchHorizontal } from 'react-icons/hi';
 
 const Traslado = ({ control }) => {
 
@@ -10,7 +10,7 @@ const Traslado = ({ control }) => {
                 <Modal.Header className="items-center px-5 py-2.5">
                     <IconTitle
                         title="Traslado"
-                        icon={<FaExchangeAlt size="20px" />}
+                        icon={<HiOutlineSwitchHorizontal size="20px" />}
                     />
                 </Modal.Header>
                 <Modal.Body className='p-4'>
