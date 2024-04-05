@@ -9,7 +9,7 @@ const Menu = () => {
                     <li className="w-full bg-white rounded-lg"><Link to="/inventario">Inventario </Link></li>
                     <li className="w-full bg-white rounded-lg"><Link to="/ventas">Ventas </Link></li>
                     <li className="w-full bg-white rounded-lg"><Link to="/salidas">Salidas </Link></li>
-                    <li className="w-full bg-white rounded-lg"><Link to="/proveedores">Proveedores </Link></li>
+                    {/* <li className="w-full bg-white rounded-lg"><Link to="/proveedores">Proveedores </Link></li> */}
                     <li className="w-full bg-white rounded-lg"><Link to="/informe">Informe </Link></li>
                 </ul>
 
