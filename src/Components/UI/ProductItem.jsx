@@ -52,8 +52,7 @@ const ProductItem = () => {
                         {
                             data.forEach(doc => {
                                 let articulo = doc.data()
-
-                                return <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                                return (<Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                                     <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{articulo.articulo}</Table.Cell>
                                     <Table.Cell>{articulo.dyf}</Table.Cell>
                                     <Table.Cell>{articulo.danfel}</Table.Cell>
@@ -64,7 +63,7 @@ const ProductItem = () => {
                                             <Button onClick={() => setModalIngreso(true)}><FaPlus /></Button>
                                         </Button.Group>
                                     </Table.Cell>
-                                </Table.Row>
+                                </Table.Row>)
 
                             })
                         }

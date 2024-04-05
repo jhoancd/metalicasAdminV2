@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiArrowSmDown } from "react-icons/hi";
-import { Button, TextInput, Modal, Label, Select, Badge } from 'flowbite-react';
+import { Button, TextInput, Modal, Label, Select } from 'flowbite-react';
 import IconTitle from '../UI/IconTitle';
 
 const Gasto = ({ control }) => {
