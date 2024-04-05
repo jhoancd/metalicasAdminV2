@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiOutlineClock, HiOutlineX } from "react-icons/hi";
 import { Button, Modal } from 'flowbite-react';
 import IconTitle from '../UI/IconTitle';
@@ -8,7 +7,7 @@ const HistorialPagos = ({ control }) => {
     return (
         <div>
             <Modal show={control.variable} onClose={() => control.funcion(false)}>
-                <Modal.Header>
+                <Modal.Header className="items-center px-5 py-2.5">
                     <IconTitle
                         title="Historial Pagos"
                         icon={<HiOutlineClock size="20px" />}
@@ -63,7 +62,7 @@ const HistorialPagos = ({ control }) => {
 
                     </div>
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer className='justify-end p-2.5'>
                     <Button size="sm" color="failure" onClick={() => control.funcion(false)}>
                         <IconTitle
                             sm

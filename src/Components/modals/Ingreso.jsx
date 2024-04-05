@@ -7,21 +7,21 @@ const Ingreso = ({ control }) => {
     return (
         <>
             <Modal show={control.variable} onClose={() => control.funcion(false)}>
-                <Modal.Header>
+                <Modal.Header className="items-center px-5 py-2.5">
                     <IconTitle
                         title="Ingreso de mercancia"
                         icon={<FaPlus size="20px" />}
                     />
                 </Modal.Header>
                 <Modal.Body className='p-4'>
-                    <div className="max-w-md mb-2">
+                    <div className=" mb-2">
                         <div className="block">
                             <Label value="Articulo" />
                         </div>
                         <Textarea value="Carro de 4 puestos; V; A; P40; 2F de galon; carpa; ruedas antipinchazos" required disabled rows={3} />
                     </div>
 
-                    <div className="max-w-md">
+                    <div>
                         <div className="mb-2 block">
                             <Label htmlFor="countries" value="Ingresar a:" />
                         </div>
@@ -38,11 +38,11 @@ const Ingreso = ({ control }) => {
                         <TextInput type="number" required shadow />
                     </div>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button color="success" onClick={() => control.funcion(false)}>Aceptar</Button>
+                <Modal.Footer className='justify-end p-2.5'>
                     <Button color="failure" outline onClick={() => control.funcion(false)}>
                         Cancelar
                     </Button>
+                    <Button color="success" onClick={() => control.funcion(false)}>Aceptar</Button>
                 </Modal.Footer>
             </Modal>
         </>

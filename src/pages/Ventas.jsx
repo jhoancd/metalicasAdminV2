@@ -20,6 +20,7 @@ const Ventas = () => {
             <Navbar />
             <AgregarVenta control={controlVenta} />
 
+
             <div className='ventas p-2'>
                 <div className="mb-2 bg-white p-4 rounded-lg border-slate-300 border">
                     <IconTitle

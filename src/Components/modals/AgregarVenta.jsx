@@ -10,7 +10,7 @@ const AgregarVenta = ({ control }) => {
     return (
         <div>
             <Modal show={control.variable} onClose={() => control.funcion(false)} size="3xl">
-                <Modal.Header>
+                <Modal.Header className='items-center px-5 py-2.5'>
                     <IconTitle
                         title="Registrar venta"
                         icon={<HiPlus size="20px" />}
@@ -127,10 +127,16 @@ const AgregarVenta = ({ control }) => {
                     </form>
 
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button color="success" onClick={() => control.funcion(false)}>Aceptar</Button>
+                <Modal.Footer className='justify-end p-2.5'>
                     <Button color="failure" outline onClick={() => control.funcion(false)}>
                         Cancelar
+                    </Button>
+                    <Button size="sm" color="success" onClick={() => control.funcion(false)}>
+                        <IconTitle
+                            sm
+                            title="Registrar"
+                            icon={<HiPlus />}
+                        />
                     </Button>
                 </Modal.Footer>
             </Modal>

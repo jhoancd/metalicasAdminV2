@@ -4,23 +4,33 @@ import { Button, Modal, Table, Badge } from 'flowbite-react';
 import IconTitle from '../UI/IconTitle';
 import TextDetail from '../UI/TextDetail';
 import HistorialPagos from './HistorialPagos';
+import PagoAbono from './PagoAbono';
 
 const DetallesFactura = ({ control }) => {
 
     const [modalHistorialPagos, setHistorialPagos] = useState(false);
+    const [modalPagoAbonos, setPagoAbonos] = useState(false);
 
     const controlHistorialPagos = {
         "variable": modalHistorialPagos,
         "funcion": setHistorialPagos
     }
 
+    const controlPagosAbonos = {
+        "variable": modalPagoAbonos,
+        "funcion": setPagoAbonos
+    }
+
     return (
 
         <>
             <HistorialPagos control={controlHistorialPagos} />
+            <PagoAbono control={controlPagosAbonos} />
+
+
             <div>
                 <Modal show={control.variable} onClose={() => control.funcion(false)}>
-                    <Modal.Header>
+                    <Modal.Header className="items-center px-5 py-2.5">
                         <IconTitle
                             title="Detalles factura"
                             icon={<HiOutlineDocumentText size="20px" />}
@@ -62,7 +72,7 @@ const DetallesFactura = ({ control }) => {
                         <TextDetail title="Abono" detail="$4.000.000" />
                         <TextDetail title="Pendiente" detail="$500.000" />
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className='justify-end p-2.5'>
                         <Button size="sm" color="failure" onClick={() => control.funcion(false)}>
                             <IconTitle
                                 sm
@@ -71,7 +81,7 @@ const DetallesFactura = ({ control }) => {
                             />
                         </Button>
                         <Button.Group>
-                            <Button size="sm" color="success">
+                            <Button size="sm" color="success" onClick={() => setPagoAbonos(true)}>
                                 <IconTitle
                                     title="Abono"
                                     sm

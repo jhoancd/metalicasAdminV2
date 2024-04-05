@@ -7,7 +7,7 @@ const AgregarInventario = ({ control }) => {
     return (
         <div>
             <Modal show={control.variable} onClose={() => control.funcion(false)}>
-                <Modal.Header>
+                <Modal.Header className="items-center px-5 py-2.5">
                     <IconTitle
                         title="Ingresar mercancia"
                         icon={<HiPlus size="20px" />}
@@ -38,11 +38,11 @@ const AgregarInventario = ({ control }) => {
                         <TextInput type="number" required shadow />
                     </div>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button color="success" onClick={() => control.funcion(false)}>Aceptar</Button>
+                <Modal.Footer className='justify-end p-2.5'>
                     <Button color="failure" outline onClick={() => control.funcion(false)}>
                         Cancelar
                     </Button>
+                    <Button color="success" onClick={() => control.funcion(false)}>Aceptar</Button>
                 </Modal.Footer>
             </Modal>
         </div>
